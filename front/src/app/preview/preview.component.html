@@ -1,0 +1,9 @@
+<ul class="books">
+  <li *ngFor="let book of books" (click)='OnSelect(book)'>
+    <span>{{book.id}}</span> {{book.title}}
+  </li>
+</ul>
+
+<h2>{{selectedBook.title | uppercase}}</h2>
+<div><span>id: </span>{{selectedBook.id}}</div>
+<div><span>author: </span>{{selectedBook.author}}</div>
